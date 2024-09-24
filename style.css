@@ -1,0 +1,278 @@
+/* Common to ALL */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #372f2f;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  margin-right: 30px;
+}
+
+ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 30px;
+  color: #372f2f;
+  cursor: pointer;
+}
+
+/* Main content section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  max-width: 500px;
+}
+
+.text1 {
+  font-size: 25px;
+  color: rgb(96, 90, 90);
+}
+
+.name {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-top: 10px;
+  color: #372f2f;
+}
+
+.text2 {
+  font-size: 25px;
+  color: rgb(96, 90, 90);
+  margin-top: 20px;
+}
+
+button {
+  font-family: "Outfit";
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: gray;
+  color: white;
+  margin-top: 30px;
+  width: 90%;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: rgb(91, 83, 83);
+  transition: 0.3s ease-in;
+}
+
+/* Skills section */
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.skills h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #372f2f;
+  position: relative;
+  top: 10px;
+}
+
+.skill-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.skill2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+
+label {
+  font-size: 25px;
+}
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+/* Connect Section */
+
+.connect {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.connect-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 40px;
+}
+
+.connect-content h2 {
+  font-size: 40px;
+}
+
+.connect-content h2 a {
+  text-decoration: none;
+  color: #372f2f;
+  border-bottom: 3px solid transparent;
+}
+
+.connect-content h2 a:hover {
+  border-bottom: 3px solid black;
+}
+
+.connect-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #372f2f;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Footer section */
+
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #372f2f;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Responsive layout development */
+@media (max-width: 640px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skills h2 {
+    margin-bottom: 15px;
+  }
+
+  .connect-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 40px;
+  }
+}
